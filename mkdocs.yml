@@ -1,6 +1,6 @@
-site_name: OSA Bot Documentation
-site_description: Official documentation for the Office of Self-Accountability Discord bot
-site_author: OSA Staff
+site_name: OSA Automation Documentation
+site_description: Official documentation for the Office of Self-Accountability Automations Bot
+site_author: ArdentTitanite
 site_url: https://captainbhh.github.io/osa-bot-docs
 
 repo_name: CaptainBHH/osa-bot-docs
@@ -83,4 +83,4 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/discord
-      link: https://discord.gg/your-invite
+      link: https://discord.gg/titanites
