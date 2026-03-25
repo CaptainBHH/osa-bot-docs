@@ -1,10 +1,10 @@
 site_name: OSA Bot Documentation
 site_description: Official documentation for the Office of Self-Accountability Discord bot
 site_author: OSA Staff
-site_url: https://captainbhh.github.io/osa-bot
+site_url: https://captainbhh.github.io/osa-bot-docs
 
-repo_name: CaptainBHH/osa-bot
-repo_url: https://github.com/CaptainBHH/osa-bot
+repo_name: CaptainBHH/osa-bot-docs
+repo_url: https://github.com/CaptainBHH/osa-bot-docs
 
 theme:
   name: material
@@ -36,10 +36,11 @@ theme:
 
 nav:
   - Home: index.md
-  - Getting Started:
-    - Installation & Hosting: setup/hosting.md
-    - Initial Configuration: setup/configuration.md
-    - Permissions & Roles: setup/permissions.md
+  - Configuration:
+    - Initial Setup: config/setup.md
+    - Config Reference: config/reference.md
+    - Log Channels: config/logging.md
+    - Permissions: config/permissions.md
   - Ticket System:
     - Overview: tickets/overview.md
     - Managing Ticket Types: tickets/types.md
@@ -55,9 +56,6 @@ nav:
     - Submitting Entries: database/submit.md
     - Bulk Upload: database/bulk.md
     - Managing Entries: database/manage.md
-  - Configuration:
-    - Config Reference: config/reference.md
-    - Log Channels: config/logging.md
   - Command Reference: reference/commands.md
 
 markdown_extensions:
@@ -70,6 +68,9 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - md_in_html
   - tables

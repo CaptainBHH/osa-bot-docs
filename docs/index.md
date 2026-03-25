@@ -1,17 +1,17 @@
 # OSA Bot Documentation
 
-Welcome to the official documentation for the **Office of Self-Accountability** Discord bot — a custom-built moderation and database management bot for the OSA community.
+Welcome to the official documentation for the **Office of Self-Accountability** Discord bot.
 
 ---
 
 ## What does OSA Bot do?
 
-OSA Bot is the backbone of OSA's operations. It handles:
+OSA Bot manages OSA's core operations directly within Discord:
 
-- **Tickets** — a fully configurable ticket system with custom types, form fields, per-type categories, and staff role permissions
-- **Investigations** — a case pipeline for tracking subjects from initial report through to publication or appeal
-- **Database** — a forum-based public record of published offenders, with bulk upload, lookups, and update tools
-- **Logging** — per-module structured log channels for tickets, cases, database events, and errors
+- :ticket: **Tickets** — A configurable ticket system with custom types, form fields, per-type categories, and staff role permissions
+- :mag: **Investigations** — A case pipeline for tracking subjects from initial report through to publication
+- :card_file_box: **Database** — A public forum-based record of published entries with search, updates, and bulk upload
+- :bell: **Logging** — Structured log channels per module for tickets, cases, database events, and errors
 
 ---
 
@@ -19,15 +19,15 @@ OSA Bot is the backbone of OSA's operations. It handles:
 
 <div class="grid cards" markdown>
 
--   :material-cog: **Getting Started**
+-   :gear: **Configuration**
 
     ---
 
-    Set up the bot from scratch — hosting, config, and permissions.
+    Configure channels, roles, log channels, and integrations.
 
-    [:octicons-arrow-right-24: Setup guide](setup/hosting.md)
+    [:octicons-arrow-right-24: Config guide](config/setup.md)
 
--   :material-ticket: **Ticket System**
+-   :ticket: **Ticket System**
 
     ---
 
@@ -35,7 +35,7 @@ OSA Bot is the backbone of OSA's operations. It handles:
 
     [:octicons-arrow-right-24: Ticket docs](tickets/overview.md)
 
--   :material-magnify: **Investigations**
+-   :mag: **Investigations**
 
     ---
 
@@ -43,7 +43,7 @@ OSA Bot is the backbone of OSA's operations. It handles:
 
     [:octicons-arrow-right-24: Case docs](cases/overview.md)
 
--   :material-database: **Database**
+-   :card_file_box: **Database**
 
     ---
 
@@ -59,10 +59,10 @@ OSA Bot is the backbone of OSA's operations. It handles:
 
 | Module | Key Commands |
 |--------|-------------|
+| Config | `/config set`, `/config view` |
 | Tickets | `/ticket panel`, `/ticket list`, `/ticketadmin type create` |
 | Investigations | `/case create`, `/case view`, `/case list`, `/case publish` |
 | Database | `/submit`, `/lookup`, `/update`, `/bulk` |
-| Config | `/config set`, `/config view` |
 
 ---
 
