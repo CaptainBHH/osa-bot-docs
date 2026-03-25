@@ -1,0 +1,86 @@
+site_name: OSA Bot Documentation
+site_description: Official documentation for the Office of Self-Accountability Discord bot
+site_author: OSA Staff
+site_url: https://captainbhh.github.io/osa-bot-docs
+
+repo_name: CaptainBHH/osa-bot-docs
+repo_url: https://github.com/CaptainBHH/osa-bot-docs
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Configuration:
+    - Initial Setup: config/setup.md
+    - Config Reference: config/reference.md
+    - Log Channels: config/logging.md
+    - Permissions: config/permissions.md
+  - Ticket System:
+    - Overview: tickets/overview.md
+    - Managing Ticket Types: tickets/types.md
+    - Ticket Commands: tickets/commands.md
+    - Logs: tickets/logs.md
+  - Investigations:
+    - Overview: cases/overview.md
+    - Case Pipeline: cases/pipeline.md
+    - Case Commands: cases/commands.md
+    - Removing Entries: cases/removal.md
+  - Database:
+    - Overview: database/overview.md
+    - Submitting Entries: database/submit.md
+    - Bulk Upload: database/bulk.md
+    - Managing Entries: database/manage.md
+  - Command Reference: reference/commands.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/your-invite
